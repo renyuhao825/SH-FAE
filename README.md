@@ -230,18 +230,6 @@ $$\min_{z, \eta} \mathcal{L} = \frac{1}{N_{\mathrm{obs}}} \sum_{j=1}^{N_{\mathrm
 
 ---
 
-## 📄 Citation
-
-If you find this code or research useful in your work, please cite:
-
-```bibtex
-@article{ren2024shfae,
-  title={SH-FAE: Functional Autoencoder with Physical Constraints for Soil Hydraulic Inversion},
-  author={Ren, Yuhao and contributors},
-  journal={arXiv preprint},
-  year={2024}
-}
-```
 
 ---
 
