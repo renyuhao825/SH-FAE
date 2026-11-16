@@ -230,9 +230,6 @@ $$\min_{z, \eta} \mathcal{L} = \frac{1}{N_{\mathrm{obs}}} \sum_{j=1}^{N_{\mathrm
 
 ---
 
-
----
-
 ## 📜 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
