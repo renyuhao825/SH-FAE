@@ -1,0 +1,44 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyTorch checkpoints and models
+*.pt
+*.pth
+
+# Large datasets and caches
+data/swcc_hcf_*.npz
+data/swcc_hcf_*.npy
+*.zarr/
+*.tar.gz
+*.zip
+
+# Ignore generic npy files except if whitelisted
+*.npy
+
+# Allow laboratory benchmark observations
+!data/laboratory/observations.npz
+
+# Outputs and experiment logs
+outputs/
+runs/
+logs/
+checkpoints/
+
+# Virtual environments
+.env/
+.venv/
+env/
+venv/
+ENV/
+
+# IDE and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,30 @@
+case: synthetic
+steps: 1500
+lr_z: 1.0e-3
+lambda_z: 1.0e-3
+noise_std: 0.01
+
+physical_scales:
+  theta_r:
+    init: 0.0
+    mu: 0.0
+    sigma: 0.0
+    lr: 1.0e-2
+  theta_s:
+    init: 0.30
+    mu: 0.30
+    sigma: 0.10
+    lr: 1.0e-2
+  log10_k:
+    init: -13.0
+    mu: -13.0
+    sigma: 2.0
+    lr: 1.0e-2
+
+solver:
+  tol: 1.0e-8
+  max_iter: 15
+  jacobian_mode: tridiagonal
+  max_line_search_iter: 8
+
+out_dir: outputs/invert_synthetic

@@ -1,0 +1,30 @@
+case: laboratory
+data_dir: data/laboratory
+steps: 1500
+lr_z: 1.0e-3
+lambda_z: 1.0e-3
+
+physical_scales:
+  theta_r:
+    init: 0.05
+    mu: 0.05
+    sigma: 0.05
+    lr: 1.0e-2
+  theta_s:
+    init: 0.50
+    mu: 0.50
+    sigma: 0.20
+    lr: 1.0e-2
+  log10_k:
+    init: -13.0
+    mu: -13.0
+    sigma: 3.0
+    lr: 5.0e-2
+
+solver:
+  tol: 1.0e-8
+  max_iter: 15
+  jacobian_mode: tridiagonal
+  max_line_search_iter: 8
+
+out_dir: outputs/invert_laboratory

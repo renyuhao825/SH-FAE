@@ -1,0 +1,66 @@
+{
+  "case": "case_2_bandai_2024_section_3_5_AZ7_upward_infiltration",
+  "description": "Processed data package for visualizing and inverting the Bandai et al. (2024) Section 3.5 AZ7 observations.",
+  "primary_entry": "observations.npz",
+  "theta_obs_shape": [
+    300,
+    8
+  ],
+  "obs_z_m": [
+    -0.085,
+    -0.075,
+    -0.065,
+    -0.055,
+    -0.045,
+    -0.035,
+    -0.025,
+    -0.015
+  ],
+  "obs_depth_cm": [
+    8.5,
+    7.5,
+    6.5,
+    5.5,
+    4.5,
+    3.5000000000000004,
+    2.5,
+    1.5
+  ],
+  "time_min": {
+    "start": 0.0,
+    "stop": 299.0,
+    "step": 1.0,
+    "alignment": "300 rows mapped to 0..299 min for direct solver-output alignment"
+  },
+  "time_days": {
+    "step": 0.0006944444444444445
+  },
+  "sigma_obs": 0.01,
+  "geometry": {
+    "Z_m": 0.1,
+    "domain_m": [
+      -0.1,
+      0.0
+    ],
+    "Ns": 100,
+    "dz_m": 0.001
+  },
+  "initial_condition": {
+    "psi_i_m": -10000.0
+  },
+  "boundary_conditions": {
+    "lower_dirichlet_psi_m": -0.0001,
+    "upper_flux_q": 0.0
+  },
+  "source_files": {
+    "data_obs": "C:\\文档\\OneDrive - University of Virginia\\1-工作资料\\2-phd\\35-SWRC-inversion\\data_codes_with_paper\\data_codes\\output-data\\inverse_test\\test3\\20231221_AZ7_1\\data_obs.npy",
+    "test3_root": "C:\\文档\\OneDrive - University of Virginia\\1-工作资料\\2-phd\\35-SWRC-inversion\\data_codes_with_paper\\data_codes\\output-data\\inverse_test\\test3",
+    "evaluation_grid_root": "C:\\文档\\OneDrive - University of Virginia\\1-工作资料\\2-phd\\35-SWRC-inversion\\data_codes_with_paper\\data_codes\\output-data\\inverse_test\\synthetic_data"
+  },
+  "reference_runs": {
+    "nn_seed1": "20231221_AZ7_1",
+    "nn_seed2": "20231221_AZ7_2",
+    "nn_seed3": "20231221_AZ7_3",
+    "vgm": "20231221_AZ7_VGM"
+  }
+}

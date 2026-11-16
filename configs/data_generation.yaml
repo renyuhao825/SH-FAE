@@ -1,0 +1,11 @@
+# Configuration for synthetic soil hydraulic library generation
+n_samples: 50000
+nx: 384
+nu: 128
+seed: 42
+y_min: -12.0
+output_path: "data/swcc_hcf_50k.npz"
+
+# Family proportions
+# 0: VGM (0.15), 1: Brooks-Corey (0.10), 2: Kosugi (0.08), 3: Fredlund-Xing (0.07)
+# 4: PDI-like VG (0.20), 5: Durner bimodal (0.25), 6: Nonparametric (0.10), 7: Boundary (0.05)
